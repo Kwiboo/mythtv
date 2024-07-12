@@ -503,7 +503,7 @@ int MythV4L2M2MContext::InitialiseV4L2RequestContext(AVCodecContext *Context)
 
     // N.B. Interop support should already have been checked
     // Create the device context
-    auto * hwdeviceref = MythCodecContext::CreateDevice(AV_HWDEVICE_TYPE_DRM, nullptr);
+    auto * hwdeviceref = MythCodecContext::CreateDevice(AV_HWDEVICE_TYPE_V4L2REQUEST, nullptr);
     if (!hwdeviceref)
         return -1;
 
